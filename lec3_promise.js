@@ -79,5 +79,36 @@ async function readAll(){
 	console.log(c)
 
 }
-
 readAll()
+
+
+
+
+ const generator = (function * (){
+ 	const a = yield read_1(generator , "test_2.txt")
+ 	console.log(a)
+ 	const b = yield read_1(generator , "test_2.txt")
+ 	console.log(b)
+ 	const c = yield read_1(generator , "test_2.txt")
+ 	console.log(c)
+ })()
+
+
+
+generator.next()
+
+function read_1 ( generator , filename ){
+ 	fs.readFile( filename , (error , data) => {
+ 		generator.next(data.toString())
+ 	})
+ }
+
+
+// 비동기 문제를 위해서 프로미스
+// 제네레이터
+// 비동기 문제 + 제네레이터 ==> ansyn await
+
+//Usage 3
+
+
+
