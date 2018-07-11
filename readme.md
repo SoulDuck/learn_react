@@ -7,12 +7,8 @@
 2_3. npm init -y<br>
 2_4. npm install --save-dev babel-cli<br>
 2_5. npm install --save-dev babel-preset-es2015<br>
-2_6 Make .babelrc
 
-{
-"presets":["es2015"]
-}
-
+--save-dev 키워드를 적용시키면 package.json
 ## example
 {
   "name": "babeltest",
@@ -29,4 +25,12 @@
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1"
   }
+}
+
+
+
+2_6 Make .babelrc
+
+{
+"presets":["es2015"]
 }
