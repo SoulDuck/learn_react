@@ -17,7 +17,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    **"build": "babel src -d dest"**
+    "build": "babel src -d dest"
   },
   "keywords": [],
   "author": "",
