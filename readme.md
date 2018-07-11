@@ -34,6 +34,6 @@
 
 <pre>
 {
-"presets":["es2015"]
+    "presets":["es2015"]
 }
 </pre>
