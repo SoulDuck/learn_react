@@ -40,7 +40,7 @@
 
 
 
-# How to export , import module?
+### How to export
 code from lec5
 make src , dst folder and install babel ,
 and add "build": "babel src -d dst" to package.json
@@ -56,3 +56,27 @@ export function mul_export(a,b){return a*b}
 그리고 npm run build && node /dst/main.js 을 실행한다
 
 /dst/main.js 에서는 babel 로 변환된 코드들이 들어있다
+
+
+
+#### How to Import
+<pre>
+//Usage 1
+// babel를 사용하지 않고 사용할 때
+calculator = require('./lec5_module')
+console.log(calculator.add(10,100))
+console.log(calculator.mul(10,100))
+</pre>
+
+<pre>
+// Usage 2
+// babel 사용할 때
+import {add as a , mul as m , test as t  } from './lec5_module'
+</pre>
+
+
+<pre>
+Import Usage 3
+import * as cal  from './lec5_module'
+cal.add(10,20)
+</pre>
