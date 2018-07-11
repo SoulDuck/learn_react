@@ -83,7 +83,7 @@ cal.add(10,20)
 
 
 # Install React
-https://reactjs.org/docs/cdn-links.html : react 을 기본으로 실행하는 CDN LINK
+https://reactjs.org/docs/cdn-links.html : react 을 기본으로 실행하는 CDN LINK<br>
 https://cdnjs.com/libraries/babel-standalone : babel 형식으로 작성되어 있는 스크립트 태그를  실행하게 해주는 lib
 
 
