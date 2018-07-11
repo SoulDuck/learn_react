@@ -37,3 +37,22 @@
     "presets":["es2015"]
 }
 </pre>
+
+
+
+# How to export , import module?
+code from lec5
+make src , dst folder and install babel ,
+and add "build": "babel src -d dst" to package.json
+
+
+너가 외부로 출력하고 싶은 method , class , Variable 앞에 export 키워드를 붙인다
+아래와 같이
+<pre>
+export function add_export(a,b){return a+b}
+export function mul_export(a,b){return a*b}
+</pre>
+
+그리고 npm run build && node /dst/main.js 을 실행한다
+
+/dst/main.js 에서는 babel 로 변환된 코드들이 들어있다
