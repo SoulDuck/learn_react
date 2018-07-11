@@ -8,7 +8,7 @@
 2_4. npm install --save-dev babel-cli<br>
 2_5. npm install --save-dev babel-preset-es2015<br>
 
---save-dev 키워드를 적용시키면 package.json
+--save-dev 키워드를 적용시키면 package.json 에 아래와 같은 **dependencies 가 적용된다
 ## example
 {
   "name": "babeltest",
