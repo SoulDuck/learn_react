@@ -88,6 +88,7 @@ https://cdnjs.com/libraries/babel-standalone : babel 형식으로 작성되어 �
 
 
 # React Framework
+```html
 <pre><code>
 <!DOCTYPE html>
 <html>
@@ -107,3 +108,4 @@ https://cdnjs.com/libraries/babel-standalone : babel 형식으로 작성되어 �
 </body>
 </html>
 </code></pre>
+```
