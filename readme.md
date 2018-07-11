@@ -41,13 +41,13 @@
 
 
 ### How to export
-code from lec5
-make src , dst folder and install babel ,
-and add "build": "babel src -d dst" to package.json
+
+make src , dst folder and install babel ,<br>
+and add "build": "babel src -d dst" to package.json<br>
 
 
-너가 외부로 출력하고 싶은 method , class , Variable 앞에 export 키워드를 붙인다
-아래와 같이
+외부로 출력하고 싶은 method , class , Variable 앞에 export 키워드를 붙인다
+
 <pre>
 export function add_export(a,b){return a+b}
 export function mul_export(a,b){return a*b}
@@ -59,7 +59,7 @@ export function mul_export(a,b){return a*b}
 
 
 
-#### How to Import
+### How to Import
 <pre>
 //Usage 1
 // babel를 사용하지 않고 사용할 때
