@@ -27,12 +27,13 @@
     "babel-preset-es2015": "^6.24.1"
   }
 }
-
 </pre>
 
 
 2_6 Make .babelrc
 
+<pre>
 {
 "presets":["es2015"]
 }
+</pre>
