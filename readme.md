@@ -112,3 +112,17 @@ https://cdnjs.com/libraries/babel-standalone : babel 형식으로 작성되어 �
 
 
 # React Compoment Framework
+
+```html <code><pre>
+    <div id="root"> </div>
+    <script type="text/babel">
+    	function Coustom(props){
+    	return <h1 style={{color : props.color }}> {props.title} {props.children}</h1>
+    }
+    	const root = document.getElementById('root')
+    	const element = <Coustom title='Title:' color='red'> First Component </Coustom>
+        ReactDOM.render(element , root)
+    </script>
+
+
+</code></pre>
