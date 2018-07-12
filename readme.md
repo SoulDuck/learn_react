@@ -124,10 +124,10 @@ https://cdnjs.com/libraries/babel-standalone : babel 형식으로 작성되어 �
         ReactDOM.render(element , root)
     </script>
 
-# React Class Compoment Framework
+
 </code></pre>
 ```
-
+# React Class Compoment Framework
 ```html<code><pre>
     class Test extends React.Component{
         render(){
@@ -138,3 +138,4 @@ https://cdnjs.com/libraries/babel-standalone : babel 형식으로 작성되어 �
     console element = <Test color="red"> Hello Component</Test>
     ReactDOM.render(element , root)
 </code></pre>
+```
