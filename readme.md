@@ -126,6 +126,7 @@ https://cdnjs.com/libraries/babel-standalone : babel 형식으로 작성되어 �
 
 # React Class Compoment Framework
 </code></pre>
+```
 
 ```html<code><pre>
     class Test extends React.Component{
