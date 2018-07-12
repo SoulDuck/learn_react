@@ -111,7 +111,7 @@ https://cdnjs.com/libraries/babel-standalone : babel 형식으로 작성되어 �
 ```
 
 
-# React Compoment Framework
+# React Function Compoment Framework
 
 ```html <code><pre>
     <div id="root"> </div>
@@ -125,4 +125,18 @@ https://cdnjs.com/libraries/babel-standalone : babel 형식으로 작성되어 �
     </script>
 
 
+</code></pre>
+
+
+# React Class Compoment Framework
+
+```html<code><pre>
+    class Test extends React.Component{
+        render(){
+            return <h1 style = {{color : this.props.color}}>{this.props.children}</h1>
+        }
+    }
+
+    console element = <Test color="red"> Hello Component</Test>
+    ReactDOM.render(element , root)
 </code></pre>
