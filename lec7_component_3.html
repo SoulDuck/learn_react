@@ -1,0 +1,26 @@
+<html>
+<head>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type='text/babel'>
+  class Test extends React.Component{
+    render(){ //render 그린다.
+      //const color = this.props.color
+      //const content = this.props.children
+      // 이렇게 변수명으로 넣으면 작동하지 않는다 왜 그럴까?
+      return <h1 style={{color : this.props.color}}>{this.props.children}</h1>
+    }
+  }
+
+  //const root = document.getElementById('root')
+  // 이걸 해도 되고 안해도 된다 왜 그런걸까?
+
+  const element = <Test color = "red" > Hello Compoent</Test>
+  ReactDOM.render(element , root)
+  </script>
+</body>
+</html>
