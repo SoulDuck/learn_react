@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Component</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+</head>
+<body>
+    <div id="root"> </div>>
+    <script type="text/babel">
+    function func1(props){
+        return <h1 style={{color : props.color}}>{props.children}</h1>
+    }
+    const func2 = function (props){
+        return <h1 stype={{color : props.color}}>{props.children}</h1>
+    }
+    const func3 = (props) =>
+        <h1 style = {{ color : props.color}} > {props.children}</h1>
+    }
+
+    const element = <div>
+
+    <func1 color = "red"> Hello Component </func1>
+    <func2 color = "blue"> Hello Component </func2>
+    <func3 color = "green"> Hello Compoenet </func3>
+
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>

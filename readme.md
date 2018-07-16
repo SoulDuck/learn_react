@@ -111,7 +111,7 @@ https://cdnjs.com/libraries/babel-standalone : babel 형식으로 작성되어 �
 ```
 
 
-# React Function Compoment Framework
+# React Function 1 Compoment Framework
 
 ```html
     <div id="root"> </div>
@@ -125,6 +125,49 @@ https://cdnjs.com/libraries/babel-standalone : babel 형식으로 작성되어 �
     </script>
 
 ```
+
+# React Function 2 Compoment Framework
+```html
+    <script type="text/babel">
+    //함수 생성부
+    function Func2(props){
+        return <h1 style={{color : props.color}}>{props.children}</h1>
+    }
+    //함수 적용부
+    <Func1 color = "red"> Hello Component </Func1>
+
+    const element = <div></div>
+    ReactDOM.render(element , root)
+    <script>
+```
+
+# React Function 3 Compoenent Framework
+```html
+    // 함수 생성부
+    const Func3 = (props){
+        <h1 style = {{color :props.color}} > {props.children}<h1>
+    }
+    //함수 적용부
+    const element <div></div>
+    <Func3 color = "green" > Hello React </Func3>
+```
+
+
+
+```html
+    <div id="root"> </div>
+    <script type="text/babel">
+    	function Coustom(props){
+    	return <h1 style={{color : props.color }}> {props.title} {props.children}</h1>
+    }
+    	const root = document.getElementById('root')
+    	const element = <Coustom title='Title:' color='red'> First Component </Coustom>
+        ReactDOM.render(element , root)
+    </script>
+
+```
+
+
 # React Class Compoment Framework
 ```html
     class Test extends React.Component{
