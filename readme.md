@@ -126,35 +126,6 @@ https://cdnjs.com/libraries/babel-standalone : babel 형식으로 작성되어 �
 
 ```
 
-# React Function 2 Compoment Framework
-```html
-    <script type="text/babel">
-    //함수 생성부
-    function Func2(props){
-        return <h1 style={{color : props.color}}>{props.children}</h1>
-    }
-    //함수 적용부
-    <Func1 color = "red"> Hello Component </Func1>
-
-    const element = <div></div>
-    ReactDOM.render(element , root)
-    </script>
-```
-
-# React Function 3 Compoenent Framework
-```html
-    <script type="text/babel>
-    // 함수 생성부
-    const Func3 = (props){
-        <h1 style = {{color :props.color}} > {props.children}<h1>
-    }
-    //함수 적용부
-    const element <div></div>
-    <Func3 color = "green" > Hello React </Func3>
-    </script>
-```
-
-
 
 ```html
     <div id="root"> </div>
@@ -168,6 +139,41 @@ https://cdnjs.com/libraries/babel-standalone : babel 형식으로 작성되어 �
     </script>
 
 ```
+
+
+# React Function 2 Compoment Framework
+```html
+    <script type="text/babel">
+    //함수 생성부
+    function Func2(props){
+        return <h1 style={{color : props.color}}>{props.children}</h1>
+    }
+    //함수 적용부
+
+
+    const element = <div>
+        <Func1 color = "red"> Hello Component </Func1>
+    </div>
+    ReactDOM.render(element , root)
+    </script>
+```
+
+# React Function 3 Compoenent Framework
+```html
+    <script type="text/babel>
+    // 함수 생성부
+
+    const Func3 = (props){
+        <h1 style = {{color :props.color}} > {props.children}<h1>
+    }
+    //함수 적용부
+    const element <div>
+    <Func3 color = "green" > Hello React </Func3>
+    </div>
+    </script>
+```
+
+
 
 
 # React Class Compoment Framework
