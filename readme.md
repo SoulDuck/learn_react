@@ -251,21 +251,27 @@ https://cdnjs.com/libraries/babel-standalone : babel 형식으로 작성되어 �
 
 ```
 ```html
-      render(){
+    <div id='root'></div>
+    <script type='text/babel'>
 
-        let mark = '○'
-        let bstyle = { fontWeight : 'normal'}
-        if (this.state.checked){
-          mark = '●'
-          bstyle = { fontWeight : 'bold' }
-        }
-        //clickhandler
-        const clickHandler = (e)=>{
-          const newValue = !this.state.checked
-          this.setState({checked: newValue})
-        }
-        return (<div onClick={clickHandler} style={bstyle}>
-          {mark} {this.props.label}
-        </div>)
-      }
+    ...
+
+    render(){
+
+    let mark = '○'
+    let bstyle = { fontWeight : 'normal'}
+    if (this.state.checked){
+      mark = '●'
+      bstyle = { fontWeight : 'bold' }
+    }
+    //clickhandler
+    const clickHandler = (e)=>{
+      const newValue = !this.state.checked
+      this.setState({checked: newValue})
+    }
+    return (<div onClick={clickHandler} style={bstyle}>
+      {mark} {this.props.label}
+    </div>)
+    }
+    </script>
 ```
