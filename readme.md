@@ -191,46 +191,29 @@ https://cdnjs.com/libraries/babel-standalone : babel 형식으로 작성되어 �
 ```html
     <div id='root'></div>
     <script type = 'text/babel'>
-
     class Test_A extends React.Component {
         // 생성자
         constructor(props , context , updater){
             super(props , context , updater)
-
             // Usage of state
             // 계속해서 변결될것들.
             // this.state = {}
             // this.state.<키>
             // this.setState({<키> : <값>}) // 상태 변경 , render() , 화면 변경
-
-
-
-
              this.state = {text : 'Hello ReactWorld'}
              setTimeout(() =>{
                 this.setState({text : '안녕히가세요'})
              } ,3000);
         }
-
         render(){
             return <h1>{this.state.text}</h1>
         }
-
         const element = <Test_A/>
         const root = document.getElementById('root')
         ReactDOM.render(element , root)
     }
-
-
-    // 1.state
-
-
-    // 2.property
-    // 3.event
     const element <Test_A/>
     cons root = document.getElementById('root')
     ReactDOM.render(element , root)
-
-
      </script>
 ```
