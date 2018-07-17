@@ -173,9 +173,6 @@ https://cdnjs.com/libraries/babel-standalone : babel 형식으로 작성되어 �
     </script>
 ```
 
-
-
-
 # React Class 1 Compoment Framework
 ```html
     class Test_A extends React.Component{
@@ -186,7 +183,6 @@ https://cdnjs.com/libraries/babel-standalone : babel 형식으로 작성되어 �
     console element = <Test_A color="red"> Hello Component</Test>
     ReactDOM.render(element , root)
 ```
-
 
 ```html
     <div id='root'></div>
@@ -216,4 +212,60 @@ https://cdnjs.com/libraries/babel-standalone : babel 형식으로 작성되어 �
     cons root = document.getElementById('root')
     ReactDOM.render(element , root)
      </script>
+```
+
+# Event 1
+```html
+  <div id='root'></div>
+  <script type='text/babel'>
+    class CBox extends React.Component {
+        constructor(props){
+          super(props)
+          this.state = {checked : false}
+        }
+      render(){
+        let mark = 'o'
+        let bstyle = { fontWeight : 'normal'}
+        if (this.state.checked){
+          mark = '●'
+          bstyle = {fontWeight : 'bold'}
+        }
+
+        const clickHandler = (function(e){
+            const newValue = !this.state.checked
+            this.setState({
+              checked:newValue
+            })
+          }).bind(this)
+        return <div onClick={clickHandler} style={bstyle}>
+          {mark} {this.props.label}
+        </div>
+      }
+    }
+    const dom = <div>
+      <CBox label = 'apple' />
+      <CBox label = 'banana' />
+      <CBox label = 'Watermelon'/>
+    </div>
+    ReactDOM.render(dom , document.getElementById('root'))
+
+```
+```html
+      render(){
+
+        let mark = '○'
+        let bstyle = { fontWeight : 'normal'}
+        if (this.state.checked){
+          mark = '●'
+          bstyle = { fontWeight : 'bold' }
+        }
+        //clickhandler
+        const clickHandler = (e)=>{
+          const newValue = !this.state.checked
+          this.setState({checked: newValue})
+        }
+        return (<div onClick={clickHandler} style={bstyle}>
+          {mark} {this.props.label}
+        </div>)
+      }
 ```
