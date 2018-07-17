@@ -248,8 +248,8 @@ https://cdnjs.com/libraries/babel-standalone : babel 형식으로 작성되어 �
       <CBox label = 'Watermelon'/>
     </div>
     ReactDOM.render(dom , document.getElementById('root'))
-
 ```
+# event 2
 ```html
     <div id='root'></div>
     <script type='text/babel'>
