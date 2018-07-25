@@ -300,7 +300,7 @@ https://cdnjs.com/libraries/babel-standalone : babel 형식으로 작성되어 �
         return (<h1> Test Input </h1>);
       }
     }
-    // property 로  들어오는 변수가 뭔지 파악한다
+    // property 로  들어오는 변수가 뭔지 검사한다
     TestInput.propTypes = {
       property1 : PropTypes.string,
       property2 : PropTypes.number,
