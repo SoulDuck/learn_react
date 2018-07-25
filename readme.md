@@ -287,42 +287,42 @@ https://cdnjs.com/libraries/babel-standalone : babel 형식으로 작성되어 �
 
 # Usage propTypes  , defaultProps
 ```html
-//TestInput.js
-import React , {Component} from 'react';
-import PropTypes from 'prop-types'
+    //TestInput.js
+    import React , {Component} from 'react';
+    import PropTypes from 'prop-types'
 
-export default class TestInput extends Component{
-  constructor(props){
-    super(props)
-    console.log(props)
-  }
-  render(){
-    return (<h1> Test Input </h1>);
-  }
-}
+    export default class TestInput extends Component{
+      constructor(props){
+        super(props)
+        console.log(props)
+      }
+      render(){
+        return (<h1> Test Input </h1>);
+      }
+    }
 
-TestInput.propTypes = {
-  property1 : PropTypes.string,
-  property2 : PropTypes.number,
-  property3 : PropTypes.bool.isRequired
-}
+    TestInput.propTypes = {
+      property1 : PropTypes.string,
+      property2 : PropTypes.number,
+      property3 : PropTypes.bool.isRequired
+    }
 
-TestInput.defaultProps= {
-  property1 : '안녕하세요' ,
-  property2 : 273 ,
-  property3 : true
-}
+    TestInput.defaultProps= {
+      property1 : '안녕하세요' ,
+      property2 : 273 ,
+      property3 : true
+    }
 
 
 
-class App extends Component {
-  render() {
-    return (
-      <TestInput/>
-    );
-  }
-}
-export default App;
+    class App extends Component {
+      render() {
+        return (
+          <TestInput/>
+        );
+      }
+    }
+    export default App;
 
 
 ```
