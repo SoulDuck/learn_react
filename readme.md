@@ -314,7 +314,7 @@ https://cdnjs.com/libraries/babel-standalone : babel 형식으로 작성되어 �
     }
 
 
-
+    // App. js
     class App extends Component {
       render() {
         return (
